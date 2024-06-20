@@ -20,10 +20,10 @@ int main(void)
 			printf("Fizz");
 
 		else if ((num % 5) == 0)
-			printf(Buzz);
+			printf("Buzz");
 
 		else
-			printf(%d, num);
+			printf("%d, num");
 
 		if (num == 100)
 			continue;
