@@ -1,18 +1,24 @@
-/* _puts.c */
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _puts - Prints a string followed by a new line to stdout.
- * @str: Pointer to the string to be printed.
-  */
+ * _puts - entry point
+ *
+ * Description: tu connais flemme un peu
+ *@str: poiteur de la chaine a compter
+ * Return: void
+ */
 
-void _put(char *str)
+void _puts(char *str)
 {
-	while (*str != '\0')
+
+	int n = 0;
+
+	while (str[n])
 	{
-		_putchar(*str);
-		str++;
+		_putchar(str[n]);
+		++n;
 	}
+
 	_putchar('\n');
 }
